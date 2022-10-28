@@ -1,6 +1,6 @@
 'use strict';
 document.addEventListener('load', overrideCSS);
-document.addEventListener('DOM', overrideCSS);
+document.addEventListener('DOMContentLoaded', overrideCSS);
 overrideCSS();
 function overrideCSS() {
   const style = document.createElement('style');
