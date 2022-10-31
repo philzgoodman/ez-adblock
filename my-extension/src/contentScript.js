@@ -1,11 +1,17 @@
 'use strict';
+
+overrideCSS();
+
 document.addEventListener('load', overrideCSS);
 document.addEventListener('DOMContentLoaded', overrideCSS);
-overrideCSS();
+
+
 function overrideCSS() {
   const style = document.createElement('style');
   style.innerHTML = `
 @media only screen and (max-width: 2500px) {
+
+  .ad-active,
   .ha__ribbon,
   .js_header,
   #header-wrap,
@@ -14,22 +20,32 @@ function overrideCSS() {
   .jppanel,
   .adContainer,
   .GoogleActiveViewElement,
+  .ad,
+    #ad,
+   div[class^='google_ads_iframe'],
+  div[class*=' google_ads_iframe'],
+  div[id^='google_ads_iframe'],
+  div[id*=' google_ads_iframe'],
+
+   div[class^='scrollover-ad-wrap'],
+  div[class*=' scrollover-ad-wrap'],
+  div[id^='scrollover-ad-wrap'],
+  div[id*=' scrollover-ad-wrap'],
   div[class^='pogo'],
   div[class*=' pogo'],
   div[id^='pogo'],
   div[id*=' pogo'],
+      div[class^="ad"],
+    div[id^="ad"],
   div[class^='google'],
   div[class*=' google'],
   div[id^='google'],
   div[id*=' google'],
-  div[class^='goog'],
-  div[class*=' goog'],
-  div[id^='goog'],
-  div[id*=' goog'],
   div[class^='videoAdUi'],
   div[class*=' videoAdUi'],
   div[id^='videoAdUi'],
   div[id*=' videoAdUi'],
+  #bg_clicked,
   div[class^='trueview'],
   div[class*=' trueview'],
   div[id^='trueview'],
@@ -70,12 +86,10 @@ function overrideCSS() {
   .ob-widget,
   #stickyadcontainer
   {
-    margin:0!important;
     display:none!important;
     visibility:hidden!important;
     width:0!important;
     height:0!important;
-    padding:0!important;
     opacity:0!important;
     filter:opacity(0)!important;
     background:transparent!important;
