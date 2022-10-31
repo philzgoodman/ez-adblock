@@ -37,7 +37,7 @@
       <recent name="C:\Users\Phil\Documents\GitHub\ez-adblock\" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build (1)">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/my-extension/package.json" />
       <command value="run" />
@@ -90,10 +90,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.build (1)" />
         <item itemvalue="npm.watch (1)" />
         <item itemvalue="npm.watch" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.test" />
       </list>
     </recent_temporary>
@@ -114,7 +114,7 @@
       <workItem from="1666916677350" duration="3239000" />
       <workItem from="1666982902599" duration="2865000" />
       <workItem from="1667079273583" duration="3655000" />
-      <workItem from="1667234615731" duration="1062000" />
+      <workItem from="1667234615731" duration="1335000" />
     </task>
     <servers />
   </component>
