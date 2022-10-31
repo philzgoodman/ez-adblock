@@ -1,7 +1,6 @@
 'use strict';
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const PATHS = require('./paths');
 
@@ -31,10 +30,7 @@ const common = {
 
     rules: [
       // Help webpack in understanding CSS files imported in .js files
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
-      },
+
       // Check for images imported in .js files and
       {
         test: IMAGE_TYPES,
@@ -50,26 +46,7 @@ const common = {
       },
     ],
   },
-  plugins: [
-    new MiniCssExtractPlugin({
-      // You don't need this for `>= 5.52.0` due to the fact that this is enabled by default
-      // Required only for `>= 5.33.2 & <= 5.52.0`
-      // Not available/unsafe for `<= 5.33.2`
-      experimentalUseImportModule: true  }),
-    // Copy static assets from `public` folder to `build` folder
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: '**/*',
-          context: 'public',
-        },
-      ],
-    }),
-    // Extract CSS into separate files
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-    }),
-  ],
+
 };
 
 module.exports = common;
