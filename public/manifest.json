@@ -11,7 +11,7 @@
   },
 
   "action": {
-    "default_title": "My Extension",
+    "default_title": "EZ-Adblock",
     "default_popup": "popup.html"
   },
   "permissions": [
@@ -21,6 +21,11 @@
     {
       "matches": [
         "<all_urls>"
+      ],
+      "exclude_globs": [
+        "https://mail.google.com/",
+        "https://mail.google.com/mail/u/0/#inbox",
+        "https://mail.google.com/mail/"
       ],
       "run_at": "document_idle",
       "js": [

@@ -1,16 +1,12 @@
 'use strict';
-
 overrideCSS();
-
 document.addEventListener('load', overrideCSS);
 document.addEventListener('DOMContentLoaded', overrideCSS);
-
 
 function overrideCSS() {
   const style = document.createElement('style');
   style.innerHTML = `
-@media only screen and (max-width: 2500px) {
-
+@media only screen and (max-width: 2105px) {
   .ad-active,
   .ha__ribbon,
   .js_header,
@@ -22,11 +18,11 @@ function overrideCSS() {
   .GoogleActiveViewElement,
   .ad,
     #ad,
+    .GoogleCreativeContainerClass,
    div[class^='google_ads_iframe'],
   div[class*=' google_ads_iframe'],
   div[id^='google_ads_iframe'],
   div[id*=' google_ads_iframe'],
-
    div[class^='scrollover-ad-wrap'],
   div[class*=' scrollover-ad-wrap'],
   div[id^='scrollover-ad-wrap'],
@@ -35,8 +31,8 @@ function overrideCSS() {
   div[class*=' pogo'],
   div[id^='pogo'],
   div[id*=' pogo'],
-      div[class^="ad"],
-    div[id^="ad"],
+    div[class^="ad-"],
+  div[id^="ad"],
   div[class^='google'],
   div[class*=' google'],
   div[id^='google'],
@@ -101,5 +97,8 @@ function overrideCSS() {
   link.type = "text/css";
   link.rel = "stylesheet";
   document.getElementsByTagName("head")[0].appendChild(link);
-}
 
+  window.console && console.log('ezmode');
+
+
+}
