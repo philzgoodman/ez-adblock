@@ -9,6 +9,7 @@ function overrideCSS() {
 @media only screen and (max-width: 2105px) {
   .ad-active,
   .ha__ribbon,
+  #ad-container,
   .js_header,
   #header-wrap,
   .media__video--thumbnail-wrapper,

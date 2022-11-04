@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "EZ-Adblock",
-  "version": "0.1.0",
-  "description": "Remove distractions the EZ way",
+  "name": "EZ-Adhider",
+  "version": "0.1.1",
+  "description": "A lightweight ad hiding tool with minimal impact on performance.",
   "icons": {
     "16": "icons/icon_16.png",
     "32": "icons/icon_32.png",
@@ -11,7 +11,7 @@
   },
 
   "action": {
-    "default_title": "EZ-Adblock",
+    "default_title": "EZ-Adhider",
     "default_popup": "popup.html"
   },
   "permissions": [
@@ -21,11 +21,6 @@
     {
       "matches": [
         "<all_urls>"
-      ],
-      "exclude_globs": [
-        "https://mail.google.com/",
-        "https://mail.google.com/mail/u/0/#inbox",
-        "https://mail.google.com/mail/"
       ],
       "run_at": "document_idle",
       "js": [
