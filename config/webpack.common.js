@@ -29,10 +29,6 @@ const common = {
   module: {
     rules: [
       // Help webpack in understanding CSS files imported in .js files
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
-      },
       // Check for images imported in .js files and
       {
         test: IMAGE_TYPES,
@@ -59,9 +55,7 @@ const common = {
       ],
     }),
     // Extract CSS into separate files
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-    }),
+
   ],
 };
 

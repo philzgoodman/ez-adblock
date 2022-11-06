@@ -20,6 +20,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Phil\Documents\GitHub\ez-adhider\node_modules\prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -48,6 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667578958434</updated>
       <workItem from="1667578960744" duration="109000" />
+      <workItem from="1667579225375" duration="2694000" />
     </task>
     <servers />
   </component>

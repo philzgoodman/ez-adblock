@@ -1,9 +1,9 @@
 'use strict';
-overrideCSS();
-document.addEventListener('load', overrideCSS);
-document.addEventListener('DOMContentLoaded', overrideCSS);
+hideElements();
+document.addEventListener('load', hideElements);
+document.addEventListener('DOMContentLoaded', hideElements);
 
-function overrideCSS() {
+function hideElements() {
   const style = document.createElement('style');
   style.innerHTML = `
 @media only screen and (max-width: 2105px) {
@@ -98,8 +98,5 @@ function overrideCSS() {
   link.type = "text/css";
   link.rel = "stylesheet";
   document.getElementsByTagName("head")[0].appendChild(link);
-
-  window.console && console.log('ezmode');
-
 
 }

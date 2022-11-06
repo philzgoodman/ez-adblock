@@ -14,9 +14,7 @@
     "default_title": "EZ-Adhider",
     "default_popup": "popup.html"
   },
-  "permissions": [
-    "scripting"
-  ],
+ 
   "content_scripts": [
     {
       "matches": [
