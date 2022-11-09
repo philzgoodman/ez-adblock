@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "EZ-Adhider",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A lightweight ad hiding tool with minimal impact on performance.",
   "icons": {
     "16": "icons/icon_16.png",
@@ -14,7 +14,7 @@
     "default_title": "EZ-Adhider",
     "default_popup": "popup.html"
   },
- 
+
   "content_scripts": [
     {
       "matches": [
